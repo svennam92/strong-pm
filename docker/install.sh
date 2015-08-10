@@ -6,7 +6,7 @@ DOCKER=$(which docker)
 INIT=none
 STOP=
 
-IMAGE=strongloop/strong-pm
+IMAGE=svennam92/strong-pm
 CONTAINER=strong-pm-container
 CONTAINER_ENVS=
 
@@ -117,7 +117,7 @@ start_container() {
     --detach --restart=no \
     --publish 8701:8701 --publish 3000:3000 --publish 3001:3001 \
     --name $CONTAINER \
-    strongloop/strong-pm
+    svennam92/strong-pm
 }
 
 require_docker
